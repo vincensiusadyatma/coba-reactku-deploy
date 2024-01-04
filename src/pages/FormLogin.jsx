@@ -4,7 +4,7 @@ import Button from "../component/Button"
 const FormLogin = () => {
     const onClick = (e) =>{ 
         e.preventDefault();
-        window.location.href = "/products"
+        window.location.href = "#/products"
         localStorage.setItem("username",e.target.username.value)
       
     }
