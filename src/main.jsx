@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import { HashRouter, Routes, Route } from 'react-router-dom'; // Mengganti BrowserRouter dengan HashRouter
+import { HashRouter, Switch, Route } from 'react-router-dom'; // Mengganti BrowserRouter dengan HashRouter
 import './index.css';
 
 import FormLogin from './pages/FormLogin';
@@ -10,11 +10,11 @@ import ProductPage from './pages/ProductPage';
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <HashRouter>
-      <Routes>
+      <Switch>
         <Route path="/" element={<FormLogin />} />
         <Route path="/daftar" element={<FormDaftar />} />
         <Route path="/products" element={<ProductPage />} />
-      </Routes>
+      </Switch>
     </HashRouter>
   </React.StrictMode>,
 );
