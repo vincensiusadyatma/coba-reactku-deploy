@@ -12,9 +12,9 @@ ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <HashRouter>
       <Routes>
-        <Route path="/" element={<FormLogin />} />
-        <Route path="/daftar" element={<FormDaftar />} />
-        <Route path="/products" element={<ProductPage />} />
+        <Route exact path="/" element={<FormLogin />} />
+        <Route exact path="/daftar" element={<FormDaftar />} />
+        <Route exact path="/products" element={<ProductPage />} />
         <Route exact path="*" element={error404}></Route>
       </Routes>
     </HashRouter>
