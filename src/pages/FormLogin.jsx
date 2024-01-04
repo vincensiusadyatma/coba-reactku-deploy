@@ -15,7 +15,7 @@ const FormLogin = () => {
                 <InputSet nama="username" tipe="username">username</InputSet>
                 <InputSet nama="password" tipe="password">password</InputSet>
                 <Button>Login</Button>
-                <p className="mt-4">Doesn't have a account ? <a href="/daftar">sign up</a></p>
+                <p className="mt-4">Doesn't have a account ? <a href="#/daftar">sign up</a></p>
                </form>
             </div>
         </div>
